@@ -3,97 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社 KOWA（仮） | LEGO® SERIOUS PLAY® による組織開発研修</title>
+    <title>株式会社 KOWA（仮） | LEGO® SERIOUS PLAY® 組織開発研修</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        /* フォント設定 */
         body { font-family: 'Noto Sans JP', sans-serif; }
+        .font-heading { font-family: 'Montserrat', sans-serif; } /* 見出し用フォント */
+
+        /* ナビゲーションリンク */
         .nav-link { font-weight: bold; font-size: 0.85rem; transition: all 0.3s; }
         .nav-link:hover { color: #e11d48; }
-        .partner-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .partner-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+
+        /* ヒーローセクション背景設定 */
+        .hero-section {
+            /* 画像の上に少し暗いグラデーションをかけて文字を読みやすくする */
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                        url('top01.jpg'); /* ここに画像ファイル名を指定 */
+            background-size: cover;
+            background-position: center;
+            color: white; /* テキストを白にする */
+        }
+
+        /* 提携先ロゴのスタイル（グレースケール） */
+        .partner-logo { filter: grayscale(100%) opacity(0.6); transition: all 0.5s; }
+        .partner-logo:hover { filter: grayscale(0%) opacity(1); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-slate-900">
 
-    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-black tracking-tighter flex items-center">
-                <span class="text-rose-600 mr-1">●</span>株式会社 KOWA（仮）
+                <span class="text-rose-600 mr-2">●</span>
+                <span class="font-heading tracking-tight">株式会社 KOWA</span>
+                <span class="text-slate-400 font-normal ml-1 text-sm">（仮）</span>
             </a>
             <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="nav-link text-rose-600 border-b-2 border-rose-600">概要</a>
+                <a href="index.html" class="nav-link text-rose-600">概要</a>
                 <a href="about-lsp.html" class="nav-link">LSPとは？</a>
                 <a href="facilitator.html" class="nav-link">ファシリテーター</a>
                 <a href="flow.html" class="nav-link">研修のながれ</a>
                 <a href="price.html" class="nav-link">料金</a>
             </nav>
-            <a href="contact.html" class="bg-slate-900 text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-rose-600 transition duration-300">
+            <a href="contact.html" class="bg-rose-600 text-white px-6 py-3 rounded-full text-xs font-bold hover:bg-slate-900 transition duration-300 shadow-md hover:shadow-lg">
                 お問い合わせ
             </a>
         </div>
     </header>
 
     <main>
-        <section class="pt-24 pb-16 bg-white border-b">
+        <section class="hero-section py-32 md:py-48">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
-                    論理を超え、<br class="hidden md:block">ブロックで組織を再定義する。
+                <h2 class="font-heading text-5xl md:text-7xl font-black mb-8 tracking-tight leading-none drop-shadow-lg">
+                    論理を超え、<br>組織を再定義する。
                 </h2>
-                <p class="text-lg md:text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
-                    シンギュラリティ高校での「起業家育成」の実践知と、LEGO® SERIOUS PLAY®を融合。
-                    現役教師が導く、身体感覚を伴う「本物の対話」が組織を加速度的に成長させます。
+                <p class="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow">
+                    シンギュラリティ高校での教育実践と、LEGO® SERIOUS PLAY®を融合。<br class="hidden md:block">
+                    現役教師がファシリテートする、加速度的な成長のための対話研修。
                 </p>
-            </div>
-        </section>
-
-        <section class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6 text-center">
-                <h3 class="text-sm font-bold text-rose-600 tracking-[0.2em] uppercase mb-12">Partnership & Trust</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    <a href="https://singularity.ed.jp" target="_blank" class="partner-card bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center justify-center">
-                        <img src="singularity.png" alt="シンギュラリティ高等学校" class="h-16 w-auto mb-4 object-contain">
-                        <span class="text-xs font-bold text-slate-400">シンギュラリティ高等学校</span>
-                    </a>
-                    <a href="https://cowa.ed.jp/" target="_blank" class="partner-card bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center justify-center">
-                        <img src="kowa.png" alt="こうわこどもえん" class="h-16 w-auto mb-4 object-contain">
-                        <span class="text-xs font-bold text-slate-400">こうわこどもえん</span>
-                    </a>
-                    <a href="https://nozomi-koi.com/" target="_blank" class="partner-card bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center justify-center">
-                        <img src="nozomi.png" alt="のぞみ幼稚園" class="h-16 w-auto mb-4 object-contain">
-                        <span class="text-xs font-bold text-slate-400">のぞみ幼稚園</span>
+                <div class="mt-12">
+                    <a href="about-lsp.html" class="inline-block bg-white text-rose-600 font-bold px-8 py-4 rounded-full hover:bg-rose-50 transition shadow-lg">
+                        メソッドを見る
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <a href="about-lsp.html" class="group p-10 bg-white border rounded-3xl hover:border-rose-600 transition shadow-sm">
-                <h4 class="font-black text-xl mb-4 group-hover:text-rose-600">LSPとは？</h4>
-                <p class="text-sm text-slate-500">大人の真剣な遊びが、なぜ最強の戦略ツールになるのか。メソッドの秘密を解説します。</p>
-            </a>
-            <a href="facilitator.html" class="group p-10 bg-white border rounded-3xl hover:border-rose-600 transition shadow-sm">
-                <h4 class="font-black text-xl mb-4 group-hover:text-rose-600">ファシリテーター</h4>
-                <p class="text-sm text-slate-500">シンギュラリティ高校の現役教師が、現場で培った対話の技術を提供します。</p>
-            </a>
-            <a href="flow.html" class="group p-10 bg-white border rounded-3xl hover:border-rose-600 transition shadow-sm">
-                <h4 class="font-black text-xl mb-4 group-hover:text-rose-600">研修のながれ</h4>
-                <p class="text-sm text-slate-500">徹底した事前分析から、当日の研修、そして事後のフィードバックまで伴走します。</p>
-            </a>
-            <a href="price.html" class="group p-10 bg-white border rounded-3xl hover:border-rose-600 transition shadow-sm">
-                <h4 class="font-black text-xl mb-4 group-hover:text-rose-600">料金プラン</h4>
-                <p class="text-sm text-slate-500">目的に応じた投資価値を最大化するための、柔軟なプラン構成をご紹介します。</p>
-            </a>
+        <section class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="font-heading text-2xl font-bold text-slate-900 mb-2">Our Approach & Service</h3>
+                    <p class="text-slate-500">研修の核心と、提供する価値について。</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="about-lsp.html" class="p-10 bg-white border border-slate-200 rounded-[2rem] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <h3 class="font-heading font-black text-xl mb-4 group-hover:text-rose-600">LSPとは？</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">「真剣な遊び」が組織を救う科学的理由とメカニズム。</p>
+                    </a>
+                    <a href="facilitator.html" class="p-10 bg-white border border-slate-200 rounded-[2rem] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <h3 class="font-heading font-black text-xl mb-4 group-hover:text-rose-600">ファシリテーター</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">シンギュラリティ高校の現役教師が伴走する強み。</p>
+                    </a>
+                    <a href="flow.html" class="p-10 bg-white border border-slate-200 rounded-[2rem] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <h3 class="font-heading font-black text-xl mb-4 group-hover:text-rose-600">研修のながれ</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">徹底した事前分析から、事後のフォローアップまで。</p>
+                    </a>
+                    <a href="price.html" class="p-10 bg-white border border-slate-200 rounded-[2rem] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <h3 class="font-heading font-black text-xl mb-4 group-hover:text-rose-600">料金・プラン</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">組織の規模と目的に応じた投資価値の最大化。</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 border-t border-slate-100 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <p class="font-heading text-sm font-bold text-slate-400 tracking-[0.3em] uppercase mb-12">Education Network</p>
+                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+                    <a href="https://singularity.ed.jp" target="_blank" class="partner-logo h-10 md:h-12"><img src="singularity.png" alt="シンギュラリティ高等学校" class="h-full object-contain"></a>
+                    <a href="https://cowa.ed.jp/" target="_blank" class="partner-logo h-10 md:h-12"><img src="kowa.png" alt="こうわこどもえん" class="h-full object-contain"></a>
+                    <a href="https://nozomi-koi.com/" target="_blank" class="partner-logo h-10 md:h-12"><img src="nozomi.png" alt="のぞみ幼稚園" class="h-full object-contain"></a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="py-16 border-t bg-white">
+    <footer class="py-12 bg-slate-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-slate-400 text-[10px] tracking-[0.3em] uppercase mb-4">&copy; 2026 株式会社 KOWA（仮） / HIROSHIMA JAPAN</p>
-            <p class="text-[8px] text-slate-300 leading-relaxed">
-                LEGO, SERIOUS PLAY, the Minifigure and the Brick and Knob configurations are trademarks of the LEGO Group,<br>
-                which does not sponsor, authorize or endorse this website.
-            </p>
+            <p class="font-heading text-lg font-bold mb-4 tracking-tight">株式会社 KOWA（仮）</p>
+            <p class="font-heading text-[10px] text-slate-500 tracking-widest uppercase">&copy; 2026 KOWA Inc. / HIROSHIMA JAPAN</p>
         </div>
     </footer>
 
