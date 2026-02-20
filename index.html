@@ -3,55 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI × Web 制作練習</title>
+    <title>組織の未来を創るレゴ®研修 | 次世代組織開発メソッド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        .container {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 400px;
-        }
-        h1 { color: #2c3e50; margin-bottom: 0.5rem; }
-        p { color: #7f8c8d; }
-        .btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.8rem 1.5rem;
-            background-color: #e67e22; /* ALEXオレンジ */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .btn:hover { background-color: #d35400; }
-        footer { margin-top: 2rem; font-size: 0.8rem; color: #bdc3c7; }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
 
-    <div class="container">
-        <h1>Hello World!</h1>
-        <p>これはAIと共同制作した<br>GitHub Pages公開テスト用サイトです。</p>
-        <a href="#" class="btn" onclick="alert('おめでとうございます！動作確認完了です。')">ここをクリック</a>
-    </div>
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight text-blue-900">LSP Training Solution</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600">メソッドについて</a>
+                <a href="#facilitator" class="hover:text-blue-600">ファシリテーター</a>
+                <a href="#process" class="hover:text-blue-600">研修の流れ</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
 
-    <footer>
-        &copy; 2026 AI Collaborative Project
+    <section class="hero-bg h-screen flex items-center justify-center text-white text-center px-4">
+        <div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">組織の「見えない声」を、<br>ブロックで可視化する。</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed text-gray-200">
+                100%対面、100% LEGO® SERIOUS PLAY®。<br>
+                シンギュラリティ高校の教育現場で磨かれた、組織を加速度的に成長させる対話メソッド。
+            </p>
+            <a href="#contact" class="bg-yellow-500 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-400 transition transform hover:scale-105 inline-block shadow-lg">
+                無料相談を申し込む
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold mb-4">なぜ、LEGO® SERIOUS PLAY® なのか？</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">NASAやGoogleも採用するこのメソッドは、単なるチームビルディングではありません。それは、全員の潜在意識をテーブルの上に引き出す「戦略立案ツール」です。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 border rounded-2xl bg-gray-50">
+                    <div class="text-blue-600 text-4xl mb-4 font-bold">100%</div>
+                    <h4 class="font-bold text-xl mb-4">全員参加の議論</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">「声の大きい人」の意見に流されることはありません。全員が作品を作り、語ることで、組織に眠る多様な視点を100%活用します。</p>
+                </div>
+                <div class="p-8 border rounded-2xl bg-gray-50">
+                    <div class="text-blue-600 text-4xl mb-4 font-bold">Visible</div>
+                    <h4 class="font-bold text-xl mb-4">思考の見える化</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">抽象的なビジョンや課題をブロックで形にすることで、言葉のズレを解消し、チーム全員が同じ絵を共有できます。</p>
+                </div>
+                <div class="p-8 border rounded-2xl bg-gray-50">
+                    <div class="text-blue-600 text-4xl mb-4 font-bold">Action</div>
+                    <h4 class="font-bold text-xl mb-4">自分事への変換</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">自分の手で作り上げた解決策だからこそ、研修が終わった瞬間から、メンバーは自ら行動を開始します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilitator" class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-6 lg:flex items-center space-y-12 lg:space-y-0 lg:space-x-16">
+            <div class="lg:w-1/2">
+                <h3 class="text-3xl font-bold mb-6 italic text-yellow-500">From Singularity to Innovation</h3>
+                <h4 class="text-2xl font-bold mb-4 text-white">教育の最前線から、ビジネスの最前線へ。</h4>
+                <p class="text-blue-100 mb-6 leading-relaxed">
+                    ファシリテーターは、起業家育成を掲げる「シンギュラリティ高等学校」の現役教師。
+                    多くの専門顧問と連携し、未来の社会を切り拓く生徒たちを育成する中で培われた「自己理解・他者理解」のメソッドを、そのまま貴社に提供します。
+                </p>
+                <ul class="space-y-3 text-sm text-blue-200 mb-8">
+                    <li>● シンギュラリティ高校 ソーシャルビジネス科での実践</li>
+                    <li>● 多世代、多業界のスペシャリストとの連携による最新知見</li>
+                    <li>● 組織の潜在能力を「加速度的に」引き出すファシリテーション</li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2 bg-white/10 p-8 rounded-3xl border border-white/20">
+                <div class="mb-4 text-yellow-400 font-bold uppercase tracking-widest text-xs">Mission</div>
+                <p class="text-xl font-medium leading-relaxed italic">
+                    「この研修なら、本当に投資する価値があるかもしれない。
+                    私たちは、そう確信させる変化を提供することを約束します。」
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold mb-4">研修の進め方</h3>
+                <p class="text-gray-600">丁寧な分析と設計が、最高の投資対効果を生み出します。</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="flex items-start space-x-6">
+                    <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">01</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">徹底的な事前ヒアリング</h4>
+                        <p class="text-gray-600 text-sm text-gray-500">依頼人と「理想の姿」を徹底的に分析。半日から丸2日間まで、目的に応じた最適な研修デザインを行います。</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">02</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">対面・オフライン研修</h4>
+                        <p class="text-gray-600 text-sm text-gray-500">全国どこへでも伺います。LEGO®ブロックを通じ、身体感覚を伴う深い対話を日本全国で実施します。</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-6">
+                    <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">03</div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">詳細なフィードバック</h4>
+                        <p class="text-gray-600 text-sm text-gray-500">研修終了後、参加者の意見や潜在的な課題をまとめ、今後の成長に向けた具体的な提言を報告します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="bg-white p-10 rounded-3xl shadow-xl">
+                <h3 class="text-3xl font-bold mb-8 text-center">まずは、貴社の未来を<br class="md:hidden">聞かせてください</h3>
+                <p class="text-center text-gray-500 mb-10">事前打ち合わせのご相談は無料です。</p>
+                <div class="space-y-6">
+                    <p class="text-center text-gray-400 italic text-sm">※ここにGoogleフォームなどを埋め込むことが可能です</p>
+                    <a href="mailto:your-email@example.com" class="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-700 transition">
+                        お問い合わせメールを送る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-xs">
+        <p>&copy; 2026 組織開発研修パートナー All Rights Reserved.</p>
+        <p class="mt-2">LSP: LEGO® SERIOUS PLAY® is a proprietary method of the LEGO Group.</p>
     </footer>
 
 </body>
