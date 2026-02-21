@@ -1,24 +1,144 @@
-<section class="py-24 bg-slate-50 text-slate-900 border-t border-slate-200">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPとは？ | 株式会社 KOWA（仮）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .font-heading { font-family: 'Montserrat', sans-serif; }
+        .nav-link { font-weight: bold; font-size: 0.85rem; transition: all 0.3s; }
+        .nav-link:hover { color: #e11d48; }
+        .gradient-text { background: linear-gradient(45deg, #e11d48, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        /* ロゴのホバーエフェクト：通常はモノクロ、ホバーでカラー */
+        .partner-logo { filter: grayscale(100%); opacity: 0.6; transition: all 0.4s ease; }
+        .partner-logo:hover { filter: grayscale(0%); opacity: 1; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center text-slate-900">
+            <a href="index.html" class="text-xl font-black tracking-tighter flex items-center">
+                <span class="text-rose-600 mr-2">●</span>
+                <span class="font-heading tracking-tight">株式会社 KOWA</span>
+                <span class="text-slate-400 font-normal ml-1 text-sm">（仮）</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">概要</a>
+                <a href="about-lsp.html" class="nav-link text-rose-600 border-b-2 border-rose-600">LSPとは？</a>
+                <a href="facilitator.html" class="nav-link">ファシリテーター</a>
+                <a href="flow.html" class="nav-link">研修のながれ</a>
+                <a href="price.html" class="nav-link">料金</a>
+            </nav>
+            <a href="contact.html" class="bg-rose-600 text-white px-6 py-3 rounded-full text-xs font-bold hover:bg-slate-900 transition duration-300 shadow-md">
+                お問い合わせ
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-24 bg-slate-50 border-b border-slate-100">
             <div class="container mx-auto px-6 text-center">
-                <h4 class="font-heading text-3xl md:text-4xl font-black mb-8 leading-tight tracking-tight">
+                <h2 class="font-heading text-4xl md:text-6xl font-black mb-8 italic tracking-tighter">Serious Play.</h2>
+                <h3 class="text-2xl md:text-3xl font-bold mb-6">「手」で考え、「形」で対話する。</h3>
+                <p class="text-slate-500 max-w-3xl mx-auto leading-loose">
+                    LEGO® SERIOUS PLAY®（LSP）は、マサチューセッツ工科大学（MIT）の研究に基づき開発された、<br class="hidden md:block">
+                    組織の「課題解決」と「戦略立案」のための高度な対話メソッドです。
+                </p>
+            </div>
+        </section>
+
+        <section class="py-24 container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="space-y-12">
+                    <h4 class="text-3xl font-bold mb-8 leading-tight">なぜブロックが、<br><span class="gradient-text">組織の停滞</span>を打破するのか？</h4>
+                    
+                    <div class="space-y-10">
+                        <div>
+                            <h5 class="font-bold text-xl mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-rose-600 text-white rounded-full flex items-center justify-center text-xs mr-3 font-heading">01</span>
+                                手と脳のダイレクトな接続
+                            </h5>
+                            <p class="text-slate-500 text-sm leading-relaxed pl-11">脳神経の大部分は手と繋がっています。「まず手を動かす」ことで、言葉だけでは引き出せなかった潜在的なアイデアや問題意識が、作品として可視化されます。</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-xl mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-rose-600 text-white rounded-full flex items-center justify-center text-xs mr-3 font-heading">02</span>
+                                100%の参加、100%の共有
+                            </h5>
+                            <p class="text-slate-500 text-sm leading-relaxed pl-11">「全員が作り、全員が語る」ことが徹底されます。声の大きい人の意見に流されることなく、組織に眠る多様な視点を100%引き出すことが可能です。</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-xl mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-rose-600 text-white rounded-full flex items-center justify-center text-xs mr-3 font-heading">03</span>
+                                意味のイノベーション
+                            </h5>
+                            <p class="text-slate-500 text-sm leading-relaxed pl-11">製品の機能を超えた「価値の意味」を再定義します。あなたが重視する「第3のイノベーション」の視点を、組織の存在意義の再定義に活用します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-[3rem] p-12 aspect-square flex flex-col justify-center space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <span class="text-rose-600 font-bold text-xs uppercase tracking-widest block mb-2">Build</span>
+                        <p class="font-bold">個人のモデル作成</p>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">まずは一人ひとりが自身の考えをブロックで形にします。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 ml-8">
+                        <span class="text-rose-600 font-bold text-xs uppercase tracking-widest block mb-2">Share</span>
+                        <p class="font-bold">ストーリーテリング</p>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">作品を通じて、自分の意図や想いをチームに共有します。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <span class="text-rose-600 font-bold text-xs uppercase tracking-widest block mb-2">Connect</span>
+                        <p class="font-bold">共通モデルの構築</p>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">全員の想いを統合し、チームとしてのひとつの形を創ります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-slate-50 border-t border-slate-200">
+            <div class="container mx-auto px-6 text-center">
+                <h4 class="font-heading text-3xl md:text-4xl font-black mb-10 tracking-tight text-slate-900">
                     シンギュラリティ高校での実践知を、<br>そのまま貴社のエンジンに。
                 </h4>
                 <p class="text-slate-600 max-w-3xl mx-auto leading-loose mb-16">
-                    私たちは、このメソッドを単なる「研修」として提供するだけではありません。<br>
-                    起業家育成を行う高校の現場で日々アップデートされている「自己・他者理解」と「課題発見力」のエッセンスを、ビジネスの現場に合わせて最適化します。
+                    私たちは、このメソッドを単なる「研修」として提供するだけではありません。<br class="hidden md:block">
+                    シンギュラリティ高校のソーシャルビジネス科やAI部で日々行われている、<br class="hidden md:block">
+                    「自己・他者理解」と「課題発見力」のエッセンスを、ビジネスの現場に合わせて最適化します。
                 </p>
                 
-                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-                    <a href="https://singularity.ed.jp" target="_blank" class="group">
-                        <img src="singularity.png" alt="シンギュラリティ高等学校" class="h-12 md:h-14 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300">
+                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20">
+                    <a href="https://singularity.ed.jp" target="_blank" class="partner-logo">
+                        <img src="singularity.png" alt="シンギュラリティ高等学校" class="h-12 md:h-14 object-contain">
                     </a>
-                    <a href="https://cowa.ed.jp/" target="_blank" class="group">
-                        <img src="kowa.png" alt="こうわこどもえん" class="h-12 md:h-14 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300">
+                    <a href="https://cowa.ed.jp/" target="_blank" class="partner-logo">
+                        <img src="kowa.png" alt="こうわこどもえん" class="h-12 md:h-14 object-contain">
                     </a>
-                    <a href="https://nozomi-koi.com/" target="_blank" class="group">
-                        <img src="nozomi.png" alt="のぞみ幼稚園" class="h-12 md:h-14 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300">
+                    <a href="https://nozomi-koi.com/" target="_blank" class="partner-logo">
+                        <img src="nozomi.png" alt="のぞみ幼稚園" class="h-12 md:h-14 object-contain">
                     </a>
                 </div>
-                <p class="text-xs text-slate-400 mt-8 tracking-wider">Our Educational Backbone</p>
+                <p class="mt-12 text-[10px] text-slate-400 font-bold uppercase tracking-[0.3em]">Our Educational Partnerships</p>
             </div>
         </section>
+    </main>
+
+    <footer class="py-12 bg-white text-center border-t border-slate-100">
+        <p class="font-heading text-xs text-slate-400 tracking-widest uppercase mb-4">&copy; 2026 株式会社 KOWA Inc. / HIROSHIMA</p>
+        <div class="max-w-2xl mx-auto px-6">
+            <p class="text-[8px] text-slate-300 leading-relaxed italic">
+                LEGO, SERIOUS PLAY, the Minifigure and the Brick and Knob configurations are trademarks of the LEGO Group, which does not sponsor, authorize or endorse this website.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
